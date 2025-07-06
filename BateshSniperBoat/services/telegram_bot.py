@@ -2,7 +2,7 @@ from telegram import Bot
 from config.settings import CHAT_ID,BOT_TOKEN
 
 # send signal to telegram
-def send_signal_to_telegram(signal):
+async def send_signal_to_telegram(signal):
     message = f"""
         BANKNIFTY SIGNAL - BUY
         Option: {signal['option']}
